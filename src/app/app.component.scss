@@ -1,0 +1,32 @@
+.topNavbar {}
+
+.nav-row {
+    background-color: #343a40;
+    color: #ffffff;
+    padding: 10px;
+}
+
+.navHeading {
+    // background-color: #007bff;
+    color: #ffffff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(88, 88, 88, 0.1);
+}
+
+.navHeading p {
+    margin: 0;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+a {
+    font-size: 18px;
+    text-decoration: none;
+}
+a:hover{
+    color: rgb(255, 255, 255);
+}
+.active {
+    color: #ff0000; 
+  }

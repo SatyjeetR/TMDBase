@@ -1,0 +1,47 @@
+/* Your component's styles (e.g., movie.component.scss) */
+.section_one {
+    background-image: url(../../../assets/movies_background.svg);
+    background-position: 16% 350px;
+    padding: 20px; /* Adjust the padding as needed */
+  }
+  
+  .scrolling-wrapper-flexbox {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  
+  .col-md-3 {
+    flex: 0 0 auto;
+    margin-right: 10px; /* Adjust the margin as needed */
+  }
+  
+  .card {
+    text-align: left; /* Adjust alignment as needed */
+    cursor: pointer;
+  }
+  
+  .showHeading {
+    font-size: 1em;
+    margin: 0;
+    width: 100%;
+    word-wrap: normal;
+    overflow-wrap: break-word;
+  }
+  
+  .showHeading:hover {
+    color: rgb(1, 180, 228);
+  }
+  .scrolling-wrapper-flexbox {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto; /* Enable horizontal scrolling */
+    scrollbar-width: none; /* Firefox */
+  
+  }
+  
+  .scrolling-wrapper-flexbox::-webkit-scrollbar {
+    display: none; /* WebKit */
+  }
+  

@@ -1,0 +1,37 @@
+<!-- <h6>Watch Later List</h6>
+<div class="row mt-3 pt-3 px-3">
+  <div class="col-md-3 mt-3" *ngFor="let show of watchLaterList">
+    <div class="card bg-dark">
+      <img [src]="'https://image.tmdb.org/t/p/original' + show.backdrop_path" class="card-img-top" alt="Movie Poster">
+    </div>
+    <h5 class="text-center">{{show.original_title || show.name}}</h5>
+  </div>
+</div> -->
+<div class="row section_one">
+  <h6 style="
+    color: #333;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+  ">Watch Later</h6>
+  <div class="scrolling-wrapper-flexbox">
+    <div class="col-md-3 mt-2" *ngFor="let show of watchLaterList">
+      <div class="card bg-dark" (click)="addToWatchLater(show)">
+        <img [src]="'https://image.tmdb.org/t/p/original'+show.backdrop_path" class="card-img-top" alt="Movie Poster">
+       
+      </div>
+      <div style="display: flex;">
+        <h3 class="text-align: left showHeading mt-2" style="    font-size: 1em;
+      margin: 0;
+      width: 100%;
+      word-wrap: normal;
+      overflow-wrap: break-word;">{{show.original_title || show.name}}</h3>
+     <button type="button" class="mt-2 removeWatch" (click)="removeFromWatchLater(show)">Remove</button>
+      </div>
+      <p style="font-size: 1em;
+      margin: 0;
+      padding: 0;
+      color: rgba(0,0,0,.6)">{{show.release_date| date: 'MMM dd, yyyy' }}</p>
+    </div>
+  </div>
+</div>
